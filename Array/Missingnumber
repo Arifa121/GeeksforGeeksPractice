@@ -1,0 +1,12 @@
+class Solution {
+    int missingNumber(int array[], int n) {
+        //int sumofnat = n*(n+1)/2;
+        //int miss;
+        int sum=0;
+        for(int i=0;i<array.length;i++){
+            sum+=array[i];
+        }
+        //miss=sumofnat-sum;
+        return n*(n+1)/2 - sum;
+    }
+}
