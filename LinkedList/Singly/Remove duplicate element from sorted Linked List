@@ -1,0 +1,18 @@
+
+class GfG
+{
+    //Function to remove duplicates from sorted linked list.
+    Node removeDuplicates(Node head)
+    {
+        Node curr=head;
+        while(curr!=null){
+            Node temp=curr;
+            while(temp!=null&&curr.data==temp.data){
+                temp=temp.next;
+            }
+            curr.next=temp;
+            curr=temp;
+        }
+		return head;
+    }
+}
